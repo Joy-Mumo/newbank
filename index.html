@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Delawey Bank East Africa</a>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#first">About Us</a>
+            <a class="nav-item nav-link" href="#second">Create Account</a>
+            <a class="nav-item nav-link" href="#third">Transcat</a>
+            <a class="nav-item nav-link" href="#fourth">Engage</a>
+        </div>  
+    </nav>
+    <title>Delawey Bank East Africa.</title>
+</head>
+<body>
+   <div class="jumbotron" >
+       <h3>Delawey Bank East Africa.</h3>
+       <h4>Your Bank of Choice.</h4>
+   </div>
+   <div class="container">
+       <div class="row" id="first">
+           <div class="col-md-12">
+               <h3 id="words">ABOUT Delawey Bank East Africa</h3><hr width="80px"; height="10px";>
+               <h4>
+                   Delawey Bank East Africa is a digital banking solution for many 
+                   East Africans.With just a phone,one can easily carry out Bank transcations
+                   with ease.<br>
+                   Delawey Bank East Africa:Your Bank Of Choice.
+               </h4>
+           </div>
+       </div>
+       <br>
+       <div class="row" id="second">
+           <div class="col-md-12">
+               <h3>Let's make it official.</h3>
+               <h4>Create your first account by making a deposit.</h4>
+               <form>
+                   <label>First Deposit</label>
+                   <input type="text" id="deposit" > 
+                   <button  type="submit" class="btn btn-info" id="acc" onclick="attack()">Deposit</button>
+                   <h4 id="display"></h4>
+               </form>
+           </div>
+       </div>
+       <hr>
+       <div class="row" id="third">
+           <div class=col-md-12>
+               <h3>There is more you can do.</h3>
+               <h4>You can withdraw or deposit from your account</h4>
+               <button  type="submit" class="btn btn-info" id="add" onclick="work()">Deposit</button>
+               <button  type="submit" class="btn btn-info" id="subtract" onclick="punch()">Withdraw</button>
+               <br><br>
+               <form>
+                <label>Input amount</label>
+                <input type="text" id="transact" > 
+               
+                <h4 id="display2"></h4>
+            </form>
+           </div>
+       </div>
+       <div class="row" id="fourth">
+        <div class=col-md-12>
+            <h3>We at Delawey Bank would love to hear from you.</h3>
+            <h4>Send a message on how we can serve you better</h4>
+            <br><br>
+            <form>
+             <label>Message</label>
+             <input type="textarea" id="message" > 
+             <button  type="submit" class="btn btn-info" id="message" onclick="crack()">Message</button>
+            
+             <h4 id="display3"></h4>
+         </form>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
