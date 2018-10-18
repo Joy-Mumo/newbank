@@ -2,22 +2,24 @@
 //front-end
 function attack() {
     event.preventDefault();
-    var a = parseInt(document.getElementById("deposit").value);
-   $("#display").text("Your first deposit is" + " " + a);
+    var m = document.getElementById("fname").value;
+    var n = document.getElementById("lname").value;
+    var a = parseInt(document.getElementById("create").value);
+   $("#display").text("Your account details:" + " " +" "+ m + " " + n +" :" + "Ksh."+a);
    
-   return a;
+   return a + m + n;
 
   }
   //back-end
-  var deposit=function(a){
-   return a;
+  var deposit=function(a,m,n){
+   return a + m + n;
   }; 
   
 
 //front-end
 function work() {
     event.preventDefault();
-    var a = parseInt(document.getElementById("deposit").value);
+    var a = parseInt(document.getElementById("create").value);
     var b = parseInt(document.getElementById("transact").value);
    $("#display2").text( a + b +" " +"Total account balance");
    
@@ -32,11 +34,15 @@ function work() {
   //front-end
 function punch() {
     event.preventDefault();
-    var a = parseInt(document.getElementById("deposit").value);
+    var a = parseInt(document.getElementById("create").value);
     var c = parseInt(document.getElementById("transact").value);
    $("#display2").text( a - c +" " +"Total account balance");
+
+   if (a<c){
+    $("#display2").text("Sorry account has insufficient funds for such a transcation");
+   }
    
-   return a + c;
+   return a - c;
 
   }
   //back-end

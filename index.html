@@ -41,11 +41,15 @@
        <div class="row" id="second">
            <div class="col-md-12">
                <h3>Let's make it official.</h3>
-               <h4>Create your first account by making a deposit.</h4>
-               <form>
+               <h4>Create your account by filling in the details and making your first deposit.</h4>
+               <form id="reg">
+                    <label>First Name</label>
+                    <input type="text" id="fname" ><br> 
+                    <label>Last Name</label>
+                   <input type="text" id="lname" ><br> 
                    <label>First Deposit</label>
-                   <input type="text" id="deposit" > 
-                   <button  type="submit" class="btn btn-info" id="acc" onclick="attack()">Deposit</button>
+                   <input type="text" id="create" >
+                   <button  type="submit" class="btn btn-info" id="acc" onclick="attack()">Create</button>
                    <h4 id="display"></h4>
                </form>
            </div>
